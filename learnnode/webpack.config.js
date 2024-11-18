@@ -22,12 +22,12 @@ export default {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.scss$/i,
+        test: /\.njk$/i,
         use: [
           "style-loader",
            "css-loader",
            {
-            loader: "sass-loader",
+            loader: "simple-nunjucks-loader",
             options : {
               sassOptions:{
               quietDeps : true
@@ -40,7 +40,11 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: './src/index.njk'
+    }),
+     new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './src/about.njk'
+    }),
   ],
 };
