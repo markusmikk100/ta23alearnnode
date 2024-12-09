@@ -65,7 +65,7 @@ export default async () => {
       new HtmlWebpackPlugin({
         template: "./src/index.njk",
         templateParameters: {
-          name: "Kaspar",
+          name: "Tauri",
           characters, //characters: characters
         },
       }),

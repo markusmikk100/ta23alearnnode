@@ -8,7 +8,7 @@
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "start": "webpack server --mode=development",
-    "deploy": "npm run build && surge ./dist kaspariscool.surge.sh"
+    "deploy": "npm run build && surge ./dist Tauri.surge.sh"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,7 @@
     "simple-nunjucks-loader": "^3.2.0",
     "style-loader": "^4.0.0",
     "surge": "^0.24.6",
-    "webpack": "^5.96.1",
+    "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
   }
