@@ -1,2 +1,2 @@
 import './style.scss';
-console.log('Hello class');
+console.log('Hello TA23A');

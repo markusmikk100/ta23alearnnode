@@ -27,7 +27,7 @@ export default async () => {
         directory: path.join(import.meta.dirname, "public"),
       },
       compress: true,
-      port: 9000, 
+      port: 9000,
     },
     module: {
       rules: [
@@ -65,7 +65,7 @@ export default async () => {
       new HtmlWebpackPlugin({
         template: "./src/index.njk",
         templateParameters: {
-          name: "Tauri",
+          name: "Kaspar",
           characters, //characters: characters
         },
       }),
